@@ -1,17 +1,23 @@
-<form>
-  <table>
-    <tr>
-      <td>Usuario:</td>
-      <td><input type="text" [(ngModel)]="usuario" [ngModelOptions]="{standalone: true}"></td>
-    </tr>
-    <tr>
-      <td>Clave:</td>
-      <td><input type="password"></td>
-    </tr>
-    <tr>
-      <td>
-      </td>
-      <td> <button type="button" (click)="login()">Ingresar</button></td>
-    </tr>
-  </table>
-</form>
+<div style="background-color: #0073c6;">
+  <img src="/assets/images/logo.png" height="180" width="180" style="display: block;
+    margin: 0 auto; padding:30px">
+
+  <br>
+  <form style="height: 500px;">
+    <table style="    margin: 23px 10px 0px 71px; color:white;font-weight:bold; text-align:right;">
+      <tr>
+        <td>Usuario</td>
+        <td><input type="text" [(ngModel)]="usuario" [ngModelOptions]="{standalone: true}"></td>
+      </tr>
+      <tr>
+        <td>Clave</td>
+        <td><input type="password"></td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td> <button type="button" (click)="login()">Ingresar</button></td>
+      </tr>
+    </table>
+  </form>
+</div>
