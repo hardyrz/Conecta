@@ -2,7 +2,7 @@
   <table>
     <tr>
       <td>Usuario:</td>
-      <td><input type="text"></td>
+      <td><input type="text" [(ngModel)]="usuario" [ngModelOptions]="{standalone: true}"></td>
     </tr>
     <tr>
       <td>Clave:</td>
@@ -14,5 +14,4 @@
       <td> <button type="button" (click)="login()">Ingresar</button></td>
     </tr>
   </table>
-
 </form>

@@ -1,4 +1,4 @@
-<ul>
+<ul *ngIf="(usuario == 'juan')">
   <app-novedad title="Trabajadores dependientes suman beneficio" text="Ahora los trabajadores dependientes disponen de un 10% adicional en la compra de lentes"
     image="logo.png"></app-novedad>
   <app-novedad title="Ingreso de Cónyuges y Concubinos de Trabajadores y Jubilados sin hijos al SNS" text="A partir del 1° de Diciembre, ingresan al Seguro Nacional de Salud, los cónyuges o concubinos de trabajadores dependientes y titulares de empresas unipersonales y servicios personales, que todavía no cuenten con dicha cobertura"
@@ -8,3 +8,13 @@
   <app-novedad title="La hackaton del BPS genera revolucionara idea" text="Participantes de la hackaton 2017 de Seguridad social generan revolucionaria app para notificar a las personas sobre
                      los beneficios del bps" image="logo.png"></app-novedad>
 </ul>
+
+
+<ul *ngIf="(usuario == 'maria')">
+    <app-novedad title="Aumento por Consejo de Salario" text="Queremos notificarles que salió el aumento del consejo de salario para domésticas"
+      image="logo.png"></app-novedad>
+    <app-novedad title="Prima por presentismo" text="En la fecha de ayer, quedó determinada la prima por presentismo en un 0.4%" image="logo.png"></app-novedad>
+    <app-novedad title="Fondo social trabajo doméstico" text="Sabías que existe un fondo social para trabajadoras domésticas?" image="logo.png"></app-novedad>
+    <app-novedad title="La hackaton del BPS genera revolucionara idea" text="Participantes de la hackaton 2017 de Seguridad social generan revolucionaria app para notificar a las personas sobre
+    los beneficios del bps" image="logo.png"></app-novedad>
+  </ul>

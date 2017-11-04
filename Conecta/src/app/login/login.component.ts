@@ -9,6 +9,8 @@ export class LoginComponent implements OnInit {
 
   @Output() onLoggedIn = new EventEmitter<boolean>();
 
+  usuario: string = '';
+
   constructor() { }
 
   ngOnInit() {
@@ -16,6 +18,7 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
+      localStorage.setItem("usuario",this.usuario);
       this.onLoggedIn.emit(true);
   }
 

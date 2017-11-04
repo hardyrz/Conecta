@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'app';
   isLoggedIn = false;
   amountNotification = 1;
+  usuario = '';
 
   onLoggedIn(value) {
     this.isLoggedIn = value;
