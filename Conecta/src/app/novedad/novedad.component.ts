@@ -16,4 +16,5 @@ export class NovedadComponent implements OnInit {
   ngOnInit() {
   }
 
+
 }

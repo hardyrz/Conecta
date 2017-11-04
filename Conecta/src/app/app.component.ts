@@ -15,4 +15,8 @@ export class AppComponent {
     this.isLoggedIn = value;
   }
 
+  onLoggedOut(value) {
+    this.isLoggedIn = value
+  } 
+
 }

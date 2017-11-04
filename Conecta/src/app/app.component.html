@@ -1,4 +1,7 @@
-<app-login *ngIf="!isLoggedIn" class="header" (onLoggedIn)="onLoggedIn($event)"></app-login>
-<app-header [amountNotification]="amountNotification" *ngIf="isLoggedIn"></app-header>
+<app-login *ngIf="!isLoggedIn" (onLoggedIn)="onLoggedIn($event)"></app-login>
+<app-header [amountNotification]="amountNotification" class="header" *ngIf="isLoggedIn" (onLoggedOut)="onLoggedOut($event)"></app-header>
 <app-body *ngIf="isLoggedIn"></app-body>
 <app-footer *ngIf="isLoggedIn" class="footer"></app-footer>
+<div style="background-color: #0073c6; height:100%">
+
+</div>
