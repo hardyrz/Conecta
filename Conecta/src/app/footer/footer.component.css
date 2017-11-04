@@ -2,3 +2,19 @@ img {
   width: 25%;
   float: left;
 }
+
+.showHome {
+  position: absolute;
+  width: 414px;
+  height: 736px;
+  top: -675px;
+  left: 0;
+}
+
+.showNotification {
+  position: absolute;
+  width: 96%;
+  height: 100px;
+  top: -635px;
+  left: 2%;
+}

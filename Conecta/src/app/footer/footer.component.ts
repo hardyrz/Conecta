@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-
+  state = false;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  stateHandler(newState) {
+    this.state = newState;
   }
 
 }
