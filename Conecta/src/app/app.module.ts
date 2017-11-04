@@ -9,6 +9,8 @@ import { BodyMainComponent } from './body-main/body-main.component';
 import { BodyTitleComponent } from './body-title/body-title.component';
 import { LoginComponent } from './login/login.component';
 import { NovedadComponent } from './novedad/novedad.component';
+import { NotificationComponent } from './notification/notification.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { NovedadComponent } from './novedad/novedad.component';
     BodyMainComponent,
     BodyTitleComponent,
     LoginComponent,
-    NovedadComponent
+    NovedadComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule
