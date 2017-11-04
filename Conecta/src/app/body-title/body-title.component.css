@@ -4,4 +4,9 @@ p {
   text-align: left;
   margin: 0px;
   color: white;
+
+  padding-top: 80px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+
 }
