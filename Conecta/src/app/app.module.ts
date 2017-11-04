@@ -10,6 +10,7 @@ import { BodyTitleComponent } from './body-title/body-title.component';
 import { LoginComponent } from './login/login.component';
 import { NovedadComponent } from './novedad/novedad.component';
 import { NotificationComponent } from './notification/notification.component';
+import { NotificationNumberComponent } from './notification-number/notification-number.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { NotificationComponent } from './notification/notification.component';
     BodyTitleComponent,
     LoginComponent,
     NovedadComponent,
-    NotificationComponent
+    NotificationComponent,
+    NotificationNumberComponent
   ],
   imports: [
     BrowserModule

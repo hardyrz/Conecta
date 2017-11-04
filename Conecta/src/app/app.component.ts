@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
   isLoggedIn = false;
+  amountNotification = 1;
 
   onLoggedIn(value) {
     this.isLoggedIn = value;
