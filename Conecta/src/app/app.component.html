@@ -1,4 +1,4 @@
 <app-login *ngIf="!isLoggedIn" class="header" (onLoggedIn)="onLoggedIn($event)"></app-login>
-<app-header [amountNotification]="amountNotification" *ngIf="isLoggedIn"></app-header>
+<app-header [amountNotification]="amountNotification" *ngIf="isLoggedIn" (onLoggedOut)="onLoggedOut($event)"></app-header>
 <app-body *ngIf="isLoggedIn"></app-body>
 <app-footer *ngIf="isLoggedIn" class="footer"></app-footer>
