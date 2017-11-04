@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-body-main',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyMainComponent implements OnInit {
 
+  @Input() usuario = '';
+
   constructor() { }
 
   ngOnInit() {
+    this.usuario = localStorage.getItem("usuario");
   }
 
 }
