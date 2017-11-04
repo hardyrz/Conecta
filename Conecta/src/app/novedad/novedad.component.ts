@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-novedad',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./novedad.component.css']
 })
 export class NovedadComponent implements OnInit {
+
+  @Input() image = '';
+  @Input() title = '';
+  @Input() text = '';
 
   constructor() { }
 
