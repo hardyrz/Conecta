@@ -1,0 +1,45 @@
+<div style="margin-top:70px;">
+  <form style="height: 500px;">
+    <table style="margin: 90px 10px 0px 71px; color:white;font-weight:bold; text-align:right;">
+      <tr>
+        <td>Nombre completo</td>
+        <td>
+          <input type="text" [(ngModel)]="user.name" name="name">
+        </td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>
+          <input type="email" [(ngModel)]="user.mail" name="mail">
+        </td>
+      </tr>
+      <tr>
+        <td>Teléfono</td>
+        <td>
+          <input [(ngModel)]="user.phone" name="phone">
+        </td>
+      </tr>
+      <tr>
+        <td>Datos</td>
+        <td style="display: table;">
+          <img src="/assets/images/like.png">
+          <small>Datos actualizados</small>
+        </td>
+      </tr>
+      <tr>
+        <td>Deudas</td>
+        <td style="display: table;">
+          <img src="/assets/images/money.png">
+          <small>Sin deudas</small>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+          <button type="button" (click)="goBackHandler()">Guardar</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>

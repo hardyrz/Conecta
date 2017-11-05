@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { NovedadComponent } from './novedad/novedad.component';
 import { NotificationComponent } from './notification/notification.component';
 import { NotificationNumberComponent } from './notification-number/notification-number.component';
+import { FormComponent } from './form/form.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { NotificationNumberComponent } from './notification-number/notification-
     LoginComponent,
     NovedadComponent,
     NotificationComponent,
-    NotificationNumberComponent
+    NotificationNumberComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,

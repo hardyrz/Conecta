@@ -1,6 +1,6 @@
 <img src="/assets/images/footer-inicio.png" alt="Inicio">
 <img src="/assets/images/footer-agenda.png" (click)="stateHandler('home')" alt="Agenda">
-<img src="/assets/images/footer-tramite.png" alt="Trámite">
+<img src="/assets/images/footer-tramite.png" alt="Trámite" (click)="showUserHandler()">
 <img src="/assets/images/footer-contacto.png" alt="Contacto">
 <img class="showHome" (click)="stateHandler('notification')" src="/assets/images/phone-home.png" *ngIf="state === 'home' || state === 'notification'"
   alt="Home">

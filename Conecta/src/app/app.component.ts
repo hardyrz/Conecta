@@ -10,6 +10,7 @@ export class AppComponent {
   isLoggedIn = false;
   amountNotification = 1;
   usuario = '';
+  showForm = false;
 
   onLoggedIn(value) {
     this.isLoggedIn = value;
@@ -17,6 +18,10 @@ export class AppComponent {
 
   onLoggedOut(value) {
     this.isLoggedIn = value
-  } 
+  }
+
+  showUserHandler(showUser) {
+    this.showForm = showUser;
+  }
 
 }

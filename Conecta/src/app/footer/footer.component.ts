@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
   state = false;
   usuario = '';
+  @Output() showUser = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
@@ -16,6 +17,10 @@ export class FooterComponent implements OnInit {
 
   stateHandler(newState) {
     this.state = newState;
+  }
+
+  showUserHandler() {
+    this.showUser.emit(true)
   }
 
 }

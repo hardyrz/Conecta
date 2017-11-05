@@ -1,0 +1,10 @@
+img {
+  height: 30px;
+  margin-left: 5px;
+}
+
+small {
+  color:green;
+  vertical-align: super;
+  margin-left: 10px;
+}
