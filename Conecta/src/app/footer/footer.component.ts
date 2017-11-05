@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
   state = false;
+  usuario = '';
   constructor() { }
 
   ngOnInit() {
+    this.usuario = localStorage.getItem("usuario");
   }
 
   stateHandler(newState) {

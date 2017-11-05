@@ -5,7 +5,7 @@
 <img class="showHome" (click)="stateHandler('notification')" src="/assets/images/phone-home.png" *ngIf="state === 'home' || state === 'notification'"
   alt="Home">
 
-<img class="showNotification" (click)="stateHandler('')" src="/assets/images/notification-dependiente-1.png" *ngIf="state === 'notification'"
+<img class="showNotification" (click)="stateHandler('')" src="/assets/images/notification-dependiente-1.png" *ngIf="state === 'notification' && usuario === 'juan'"
   alt="Home">
-<img class="showNotification" (click)="stateHandler('')" src="/assets/images/notification-domestica-1.png" *ngIf="state === 'notification'"
+<img class="showNotification" (click)="stateHandler('')" src="/assets/images/notification-domestica-1.png" *ngIf="state === 'notification' && usuario === 'maria'"
   alt="Home">
